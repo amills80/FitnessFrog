@@ -9,13 +9,6 @@ namespace Treehouse.FitnessFrog.Models
     public class Entry
     {
         /// <summary>
-        /// Default constructor.
-        /// </summary>
-        public Entry()
-        {
-        }
-
-        /// <summary>
         /// The intensity level of the activity.
         /// </summary>
         public enum IntensityLevel
@@ -24,7 +17,14 @@ namespace Treehouse.FitnessFrog.Models
             Medium,
             High
         }
-        
+
+        /// <summary>
+        /// Default constructor.
+        /// </summary>
+        public Entry()
+        {
+        }
+
         /// <summary>
         /// Constructor for easily creating entries.
         /// </summary>

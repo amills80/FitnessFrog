@@ -53,11 +53,6 @@
     </div>
 
     <div class="container body-content">
-        @RenderSection("scripts", required: false)
-        @section scripts {
-            <script src="~/Scripts/jquery.validate.min.js"></script>
-            <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
-        }
         @RenderBody()
         <footer>
             @Html.Partial("_Logo", new ViewDataDictionary { { "element-id", "footer_logo" } })
