@@ -110,23 +110,23 @@ namespace Treehouse.FitnessFrog.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            // TODO Retrieve Entry for provided id param val
+            //  Retrieve Entry for provided id param val
             Entry entry = _entriesRepository.GetEntry((int)id);
-            // TODO return 404 not found if entry not found
+            //  return 404 not found if entry not found
             if (entry == null)
             {
                 return HttpNotFound();
             }
-            // TODO pass entry to the view
+            //  pass entry to the view
             return View(entry);
         }
 
         [HttpPost]
         public ActionResult Delete(int id)
         {
-            // TODO Delete the entry 
+            //  Delete the entry 
             _entriesRepository.DeleteEntry(id);
-            // TODO redirect to entries list page
+            //  redirect to entries list page
             return RedirectToAction("Index");
         }
 
