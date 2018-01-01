@@ -60,7 +60,6 @@ namespace Treehouse.FitnessFrog.Controllers
                 ModelState.AddModelError("Duration", "The Duration field must be greater than '0'.");
             }
 
-
             if (ModelState.IsValid)
             {
                 _entriesRepository.AddEntry(entry);
